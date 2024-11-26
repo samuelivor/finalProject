@@ -1,0 +1,264 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  nav {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between left and right sides */
+    align-items: center; /* Center items vertically */
+    background-color: #333; /* Background color of the navigation bar */
+    position: fixed;
+    width: 100%; /* Full width */
+    padding: 0px 20px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding in the dimensions */
+    z-index: 1000; /* Keep it on top of other elements */
+}
+
+.left-side {
+    display: flex; /* Align the logo-container and nav-links horizontally */
+    align-items: center; /* Vertically align items */
+    gap: 20px; /* Add spacing between logo-container and nav-links */
+}
+
+.logo-container {
+    display: flex; /* Align logo and company name horizontally */
+    align-items: center; /* Vertically align logo and text */
+    gap: 10px; /* Spacing between the logo and text */
+}
+
+.logo {
+    height: 40px; /* Set a consistent height for the logo */
+}
+
+.company-name {
+    color: whitesmoke;
+    font-size: 1.5em; /* Larger text for the company name */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold font for emphasis */
+}
+
+.nav-links {
+    display: flex; /* Align navigation links horizontally */
+    height: 100%;
+}
+
+.nav-links a {
+    color: #f2f2f2;
+    text-decoration: none; /* Remove underline */
+    font-size: 17px; /* Adjust font size */
+    padding: 12px 15px; /* Add padding for clickable area */
+    height: 100%;
+}
+
+.nav-links a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.nav-links a.active {
+    background-color: tomato;
+    color: white;
+}
+
+.search-area {
+    display: flex; /* Align search elements horizontally */
+    align-items: center; /* Vertically align input and buttons */
+    gap: 10px; /* Add spacing between the search input and buttons */
+}
+
+.search-area input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 150px; /* Adjust width as needed */
+}
+
+.search-area button {
+    padding: 5px 10px;
+    border: none;
+    background-color: lightgray;
+    color: navy;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-area button:hover {
+    background-color: tomato;
+}
+
+  section {
+    display: block;
+    height:100%;
+    width:100%;
+    box-sizing:border-box;
+  }
+
+  .full-height {
+    height: 100vh; /* Makes the section span the full height of the viewport */
+    display: flex; /* Optional: To center content inside */
+    flex-direction: column; /* Optional: Ensures content stacks vertically */
+    justify-content: center; /* Centers content vertically */
+    align-items: left; /* Centers content horizontally */
+    padding: 20px;
+  }
+
+  .homepage-container {
+    display: flex; /* Arrange intro-section and popup-container side by side */
+    justify-content: space-between; /* Space between the two sections */
+    align-items: center; /* Align items at the top */
+    padding: 10px; /* Padding around the container */
+    height: 100%; /* Occupy the full height of the section */
+    width: 100%;
+    box-sizing: border-box; /* Include padding in dimensions */
+    gap: 20px; /* Adds 20px spacing between flex items */
+}
+
+.intro-section {
+    flex: 1; /* Let intro-section take one part of the available space */
+    max-width: 100%; /* Set a maximum width */
+    max-height: 100%;
+    color: whitesmoke;
+    text-shadow: 1px 1px navy;
+    justify-content: left;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3); /* Optional: Add background for contrast */
+    border-radius: 6px;
+    overflow: hidden; /* Prevent content overflow */
+}
+
+.explore-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: navy;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.explore-btn:hover {
+    background-color: tomato;
+}
+
+/* Disabled state of the button */
+.explore-btn:disabled {
+    background-color: #a5a5fc; /* Lighter background color when disabled */
+    color: white;             /* Change text color when disabled */
+    cursor: default;        /* Change the cursor to 'not-allowed' */
+    border: 1px solid #ccc;     /* Lighter border to match disabled state */
+}
+
+/* Remove hover effect when the button is disabled */
+.explore-btn:disabled:hover {
+    background-color: #a5a5fc; /* Prevent hover effect when disabled */
+}
+
+  p {
+    color: whitesmoke;
+    text-shadow: 1px 1px navy;
+  }
+
+  h2 {
+    color: #edc2ab;
+    font-weight: bold;   /* Make it bold */
+  }
+
+  /* Contact Form */
+
+  section input, section textarea {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    margin: 10px;  
+    width:100%;
+    opacity: 0.6;
+  }
+  
+  fieldset {
+    display: flexbox;
+    align-content: center;
+    justify-content: center;  
+    padding: 25px; 
+    margin-left: 40px; 
+    margin-right: 40px;   
+    border: thin solid white;
+    width: 60%;
+  }
+
+  /* Popup container */
+
+.popup-container {
+    flex: 1; /* Allow popup-container to take up available space */
+    width: 100%; /* Prevent it from becoming too wide */
+    height: 90%;
+    position: relative;
+    display: flex;
+    justify-content: center; /* Center popup horizontally */
+    align-items: center; /* Center popup vertically */
+    box-sizing: border-box;
+}
+
+/* The actual popup (appears on top) */
+.popuptext {
+    visibility: hidden;
+    width: 100%; /* Fill the popup-container width */
+    height: 90%;
+    background-color: none; /* Solid background to make it distinct */
+    color: white;
+    text-align: left;
+    padding: 20px 20px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+  .country-name {
+    text-align: center;  /* Center the text */
+    font-weight: bold;   /* Make it bold */
+    font-size: 1.2em;    /* Optional: Adjust the font size */
+    margin-bottom: 0.5em; /* Optional: Add space below the name */
+}
+
+  .destination-image {
+    display: block;       /* Makes the image take up a block line */
+    margin: 0 auto;       /* Centers the image horizontally */
+    max-width: 90%;       /* Ensures the image fits within the popup */
+    border-radius: 8px;   /* Optional: Adds rounded corners */
+    margin-bottom: 1em;   /* Adds space below the image */
+}
+
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }

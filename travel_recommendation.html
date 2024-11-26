@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="travel_recommendation.css">
+        <title>SF adventure travels</title>
+    </head>
+
+    <body>
+        <!-- Navigation Bar -->
+        <nav>
+            <div class="left-side">
+                <div class="logo-container">
+                    <img src="logo.png" alt="SF-AdTrav Logo" class="logo">
+                    <span class="company-name">SF-AdTrav</span>
+                </div>
+                <div class="nav-links">
+                    <a class="active" href="#home-page">Home</a>
+                    <a href="#about-us">About Us</a>
+                    <a href="#contact-us">Contact Us</a>
+                </div>
+            </div>
+            <div class="search-area">
+                <input type="text" id="search" placeholder="Search">
+                <button onclick="search()">Search</button>
+                <button onclick="clearSearch()">Reset</button>
+            </div>
+        </nav>
+        
+
+        <!-- Home page -->
+        <section id="home-page" class="full-height" style="background-image: url('Atacama.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover">
+            <!--Atacama photo by Marek Piwnicki from pexels.com-->
+            <div class="homepage-container">
+                <div class="intro-section">
+                    <h1 style="color: navy; text-shadow: 1px 1px whitesmoke;">EXPLORE DREAM DESTINATIONS</h1>
+                    <p>
+                        Explore dream destinatons discovered and experienced personally by
+                        Sam F and Sof F themselves. Through SF Adventure Travels, you can discover
+                        these unique places the unpaved way with the tranquility of having everything
+                        planned and taken care of. Dare to experience the true abroad!
+                    </p>
+                    <button onclick="explore()" class="explore-btn">Explore</button>
+                </div>
+                <div class="popup-container">
+                    <span class="popuptext" id="myPopup"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us -->
+        <section id="about-us" class="full-height" style="background-image: url('Rainforest.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+            <!--Rainforest photo by Amal Abdulla on pexels.com-->
+            <!--Ocean photo by Aaron Ulsh from pexels.com-->
+            <div class="homepage-container">
+                <div class="intro-section">
+                    <h1 style="color: #a5a5fc; text-shadow: 1px 1px black;">ABOUT US</h1>
+                    <p>
+                        SF Adventure Travels is first of all, a dedicated team of travellers that want
+                        to share their love for the world, halping you discover it in the most authentic
+                        way possible. Passionate, all of us at SF Adventure Travels will give it all we have
+                        to give you the experience you deserve
+                    </p>
+                </div>
+                <div class="intro-section">
+                    <h1 style="color: #a5a5fc; text-shadow: 1px 1px black;">THE TEAM</h1>
+                    <h2> Sam </h2>
+                    <p>
+                        Avide traveller since he was still in his mom's belly, he knew there was no
+                        other vocation than travel agent. Not only his passion, travelling is the only
+                        thing he has ever known
+                    </p>
+                    <h2> Sof </h2>
+                    <p>
+                        From sedentary to perpetually looking for knew uncharted territory, she values
+                        travelling more than she values life itself. Sof married travelling and they
+                        will be together 'till death do 'em part !
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-us" class="full-height" style="background-image: url('Airmail.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+            <!--Photo by craveiro_ pics from pexels.com-->
+            <h1 style="color: navy;">
+                CONTACT US
+            </h1>
+            <div class="flex_center">
+                <fieldset>
+                  <legend class="introduction">Contact form</legend>          
+                  <input type="text" placeholder="Name (Optional)">
+                  <input type="text" placeholder="email"> <br/>
+                  <textarea id="message" cols="500" rows="10" placeholder="Message"></textarea>
+                  <div class="flex_center">
+                    <button id="send_message" class= explore-btn onclick="sendMessage()">Send</button>
+                  </div>
+                </fieldset>
+              </div>
+        </section>
+        <script src="travel_recommendation.js"></script>
+    </body>
+</html>
+
+<!--Sydney photo by Patrick McLachlan on pexels.com-->
+<!--Paris photo by Chris Molloy on pexels.com-->
+<!--Santiago photo by Alisha Lubben on pexels.com-->
+<!--Mumbai photo by Stockified on pexels.com-->

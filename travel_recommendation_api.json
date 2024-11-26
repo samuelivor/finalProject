@@ -1,0 +1,30 @@
+[
+    {
+        "country": "Australia",
+        "city": "Sydney",
+        "description": "A giant continent country with various climates and unique ecosystems both onland and inocean",
+        "imgURL": "Sydney.jpg",
+        "keywords":["australia","sydney","snake","kangarou","danger","beach","desert","surf","country"]
+    },
+    {
+        "country": "France",
+        "city": "Paris",
+        "description": "A country known for it's cuisine, history and culture. If you dare to venture off the beaten path there you can stumble uppon many hidden gems",
+        "imgURL": "Paris.jpg",
+        "keywords":["country","france","paris","surf","mountain","beach","nature","food","art","museum","culture"]
+    },
+    {
+        "country": "Chile",
+        "city": "Santiago",
+        "description": "4000km long from South to North and only as wide as 200km, this two dimensional country spans all the climates and landscapes you can imagine",
+        "imgURL": "Santiago.jpg",
+        "keywords":["country","chile","santiago","mountain","surf","beach","nature","desert","countries","temple"]
+    },
+    {
+        "country": "India",
+        "city": "Mumbai",
+        "description": "Rich in culture and famous for it's incredible food. This spicy country is filled with diverse nature and spiritualism",
+        "imgURL": "Mumbai.jpg",
+        "keywords":["country","india","mumbai","mountain","nature","food","countries","temple"]
+    }
+]  
